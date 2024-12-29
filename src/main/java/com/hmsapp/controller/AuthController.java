@@ -31,6 +31,12 @@ public class AuthController {
 
         Optional<User> opUsername = userRepository.findByUsername(user.getUsername());
         if(opUsername.isPresent()){
+
+
+            System.out.println("Milind");
+            System.out.println("Ghegadmal");
+            System.out.println("Software");
+
             return new ResponseEntity("Username already exists", HttpStatus.INTERNAL_SERVER_ERROR);
         }
 
